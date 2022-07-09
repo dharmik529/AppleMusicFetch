@@ -83,16 +83,15 @@ def main(colorscheme="catppuccin", random_color=True, category='profile', term='
     else : 
         field_one, field_two, field_three, field_four, field_five = fetch_profile(theme, Spotipy, term, all_artists)
 
-    art = f"      {logo_color}______{ENDCOLOR}" \
-          f"\n   {logo_color};;        ;;{ENDCOLOR}" \
-          f"\n {logo_color};;            ;;{ENDCOLOR}      {field_one}" \
-          f"\n{logo_color};;{ENDCOLOR}   {theme['colorTwo']}_..**.._{ENDCOLOR}   {logo_color};;{ENDCOLOR}     {field_two}" \
-          f"\n{logo_color};;{ENDCOLOR}   {theme['colorThree']}_..**.._{ENDCOLOR}   {logo_color};;{ENDCOLOR}     {field_three}" \
-          f"\n{logo_color};;{ENDCOLOR}   {theme['colorFour']}_..**.._{ENDCOLOR}   {logo_color};;{ENDCOLOR}     {field_four}" \
-          f"\n {logo_color};;            ;;{ENDCOLOR}      {field_five}" \
-          f"\n   {logo_color};;        ;;{ENDCOLOR}" \
-          f"\n      {logo_color}------{ENDCOLOR}" \
-    
+    art = f"\n                  " \
+          f"\n          {logo_color}(((){ENDCOLOR}    " \
+          f"\n    {logo_color}(((((((((){ENDCOLOR}    {field_one}" \
+          f"\n    {logo_color}(((((){ENDCOLOR}  {logo_color}(){ENDCOLOR}    {field_two}" \
+          f"\n    {logo_color}(){ENDCOLOR}      {logo_color}(){ENDCOLOR}    {field_three}" \
+          f"\n    {logo_color}(){ENDCOLOR}    {logo_color}(((){ENDCOLOR}    {field_four}" \
+          f"\n  {logo_color}(((){ENDCOLOR}    {logo_color}(((){ENDCOLOR}    {field_five}" \
+          f"\n  {logo_color}(((){ENDCOLOR}            " \
+          f"\n                  " \    
     print(art)
 
 if __name__ == "__main__":
